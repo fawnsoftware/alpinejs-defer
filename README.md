@@ -4,7 +4,7 @@ An Alpine.js directive designed to address the issue of large running tasks occu
 
 ## Demo
 
-[View the demo](https://arrowtide.github.io/alpinejs-defer/)
+[View the demo](https://fawnsoftware.github.io/alpinejs-defer/)
 
 ## About
 
@@ -16,8 +16,8 @@ Alpine.js is an amazing tool, but as your component library grows, initializing 
 
 ## Installation
 
-> [!IMPORTANT]  
->  This plugin is only available as an ES module for the time being. 
+> [!IMPORTANT]
+>  This plugin is only available as an ES module for the time being.
 
 ### NPM
 
@@ -52,7 +52,7 @@ Will initialise the component just before it hits the window using the `Intersec
 
 ### `x-defer:event`
 
-Will initialise the component when an event you specify is fired on the `window`. 
+Will initialise the component when an event you specify is fired on the `window`.
 
 eg.
 
@@ -64,7 +64,7 @@ eg.
 <nav x-data="nav">
 
 	...
-	
+
   <!-- Some deeply nested component -->
   <div x-defer:event="open-navigation">
     ...
@@ -72,8 +72,8 @@ eg.
 </nav>
 ```
 
-> [!IMPORTANT]  
->  Events like `load` will not work properly and will cause components to sometimes not initialise. Events should come from a specific action, like a click that triggers your custom event. 
+> [!IMPORTANT]
+>  Events like `load` will not work properly and will cause components to sometimes not initialise. Events should come from a specific action, like a click that triggers your custom event.
 
 ---
 
@@ -85,4 +85,4 @@ Will initialise the element when a user interacts with the page in any way.
 
 ### `x-defer`
 
-Using the directive without a name, this will defer the component until _after_ all of the components without x-defer have been initialised. It will put each component onto a new task on the main thread, leaving room for other important tasks. 
+Using the directive without a name, this will defer the component until _after_ all of the components without x-defer have been initialised. It will put each component onto a new task on the main thread, leaving room for other important tasks.
