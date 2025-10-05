@@ -1,6 +1,6 @@
 {
     "name": "alpinejs-defer",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Defer components until they're needed.",
     "author": "Jon Karic",
     "license": "MIT",
